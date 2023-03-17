@@ -1,36 +1,29 @@
 package test;
 
-
- //Find factors ; complete
- //prime number checking
- //composite number
- 
-
-
-
 import java.util.Scanner;
+
 public class Test1 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		int count=0;
-		System.out.println("Enter the number :");
+		System.out.println("Enter n value");
 		int n=sc.nextInt();
+		int Nang=0;
 		
-		for(int i=1;i<=n;i++) {
-			if(n%i==0) {
-				count++;
-			}	
-		}
-		System.out.println(" Numbers of facters : "+count);
-		if(count==2) {
-			System.out.println("prime number : "+ n);
-		}else {
-			System.out.println("not prime :"+ n);
-		}
-		if(count>3) {
-			System.out.println("Composite number : "+ count);
-		}else {
-			System.out.println("natural number : "+ count);
+		for(int i=1;i<=n;i++){
+			for(int j=0;j<=i;i++) {
+				while(n>0) {
+					int k=n%10;
+					n=n/10;
+					Nang=Nang+(k*k*k);
+					int count = 0;
+					count++;
+					System.out.println("amsstong numbers"+count);
+				}
+				
+			}
+		
+			
 		}
 	}
+
 }
